@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Towers of Hanoi</title>
+        <script src="underscore.js"></script>
+        <script src="jquery.js"></script>
+        <script type="text/javascript" src="hanoi.js"></script>
+        <script type="text/javascript" src="hanoi_ui.js"></script>
+        <link href="hanoi.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+      <br>
+        <h1>Welcome to Towers of Hanoi!</h1>
+        <br>
+        <div class="board">
+            <div class='tower' id = "0">
+                <div class="disk"></div>
+                <div class="disk"></div>
+                <div class="disk"></div>
+                <div class="towername">Tower 1</div>
+            </div>
+            <div class='tower' id = "1">
+                <div class="disk" ></div>
+                <div class="disk" ></div>
+                <div class="disk" ></div>
+                <div class="towername">Tower 2</div>
+            </div>
+            <div class='tower' id = "2">
+                <div class="disk" ></div>
+                <div class="disk" ></div>
+                <div class="disk" ></div>
+                <div class="towername">Tower 3</div>
+            </div>
+        </div>
+        
+        <script charset = "utf-8">
+        $(function () {
+          // var num_disks = prompt("How many disks would you like to play with?");
+          var game = new Hanoi.Game();
+          var ui = new Hanoi.UI(game);
+          ui.render();
+          ui.setupHandlers();
+        });
+        </script>
+
+    </body>
+    </html>
+    
+
+    

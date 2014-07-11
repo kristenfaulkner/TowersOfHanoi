@@ -1,0 +1,50 @@
+* {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.tower {
+  display: inline-block;
+  width: 100px;
+  height: 156px;
+  padding: 0;
+  vertical-align: text-top;
+}
+
+.disk {
+  border: thin solid black;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  vertical-align: text-bottom;
+}
+
+.board {
+  width: 500px;
+  height: 300px;
+  align: center;
+  display: block;
+}
+
+.towername {
+  border: thin solid black;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20px;
+
+}
+
+.test-parent {
+  height: 300px;
+}
+
+.test {
+  display: inline;
+  background-color: red;
+  height: 100px;
+  width:100px;
+  vertical-align: text-top;
+}
